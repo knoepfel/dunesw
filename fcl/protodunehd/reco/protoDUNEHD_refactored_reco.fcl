@@ -44,7 +44,6 @@ services:
 
 #services.Geometry.SortingParameters.ChannelsPerOpDet: 12
 #services.Geometry.GDML: "protodune_v7.gdml"
-#services.Geometry.ROOT: "protodune_v7.gdml"
 
 #BackTracker Module labels
 services.BackTrackerService.BackTracker.G4ModuleLabel: "largeant"
@@ -223,7 +222,7 @@ physics.producers.opslicer.OpHitModuleLabel:                "ophit"
 
 # Use channel map service for data
 #services.PdspChannelMapService:        @local::pdspchannelmap
-services.ExptGeoHelperInterface.ChannelMapClass: "DuneApaChannelMapAlg"
+services.WireReadout.WireReadoutClass: "DuneApaWireReadout"
 
 #Forcing Pandora to create either all tracks or all showers on each PFParticle object
 physics.producers.pandora2Track.PFParticleLabel:             "pandora"
